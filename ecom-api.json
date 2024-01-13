@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "your-postman-id",
+    "name": "E-Commerce API",
+    "description": "Collection of API endpoints for the E-Commerce API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Product",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Test Product\",\n  \"description\": \"Test Description\",\n  \"price\": 19.99,\n  \"variants\": [\n    {\"name\": \"Variant 1\", \"sku\": \"SKU123\", \"additionalCost\": 5.0, \"stockCount\": 50},\n    {\"name\": \"Variant 2\", \"sku\": \"SKU456\", \"additionalCost\": 0.0, \"stockCount\": 100}\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Product",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Updated Product\",\n  \"description\": \"Updated Description\",\n  \"price\": 29.99,\n  \"variants\": [\n    {\"name\": \"Updated Variant\", \"sku\": \"SKU789\", \"additionalCost\": 8.0, \"stockCount\": 75}\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/products/1", // Replace 1 with an actual product ID
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Product",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products/1", // Replace 1 with an actual product ID
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get All Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Search Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/products?search=test", // Replace 'test' with an actual search query
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "products"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "test"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
