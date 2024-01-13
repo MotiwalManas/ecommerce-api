@@ -16,12 +16,12 @@
           "raw": "{\n  \"name\": \"Test Product\",\n  \"description\": \"Test Description\",\n  \"price\": 19.99,\n  \"variants\": [\n    {\"name\": \"Variant 1\", \"sku\": \"SKU123\", \"additionalCost\": 5.0, \"stockCount\": 50},\n    {\"name\": \"Variant 2\", \"sku\": \"SKU456\", \"additionalCost\": 0.0, \"stockCount\": 100}\n  ]\n}"
         },
         "url": {
-          "raw": "http://localhost:3000/products",
+          "raw": "http://localhost:8000/products",
           "protocol": "http",
           "host": [
             "localhost"
           ],
-          "port": "3000",
+          "port": "8000",
           "path": [
             "products"
           ]
@@ -43,7 +43,7 @@
           "host": [
             "localhost"
           ],
-          "port": "3000",
+          "port": "8000",
           "path": [
             "products",
             "1"
@@ -62,7 +62,7 @@
           "host": [
             "localhost"
           ],
-          "port": "3000",
+          "port": "8000",
           "path": [
             "products",
             "1"
@@ -81,7 +81,7 @@
           "host": [
             "localhost"
           ],
-          "port": "3000",
+          "port": "8000",
           "path": [
             "products"
           ]
@@ -99,7 +99,7 @@
           "host": [
             "localhost"
           ],
-          "port": "3000",
+          "port": "8000",
           "path": [
             "products"
           ],
